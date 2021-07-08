@@ -43,3 +43,8 @@ yarn test --watch
 yarn lint
 yarn fix
 ```
+
+## debug
+
+- Press F5 Key
+- or VSCode Mene Run --> Start Debugging
