@@ -1,6 +1,13 @@
 import Express from 'express'
 import { indexPage } from './pages/index'
 import { usersPage } from './pages/users'
+import mongoose from 'mongoose'
+
+// mongoDB
+mongoose.connect('mongodb://localhost:27017/test_db', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
 
 // create server application
 export const app = Express()
