@@ -1,5 +1,4 @@
 import Express from 'express'
-import path from 'path'
 import { indexPage } from './pages/index'
 import { usersPage } from './pages/users'
 
@@ -11,7 +10,7 @@ app.use(Express.static(`${__dirname}/public`))
 
 // use ejs as html template engine
 app.set('view engine', 'ejs')
-app.set('views', path.resolve(__dirname, 'views'))
+app.set('views', `${__dirname}/views`)
 
 // routing
 app.get('/', indexPage)
