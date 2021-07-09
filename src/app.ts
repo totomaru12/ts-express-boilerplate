@@ -3,7 +3,7 @@ import { indexPage } from './pages/index'
 import { usersPage } from './pages/users'
 
 // create server application
-const app = Express()
+export const app = Express()
 
 // set static folder
 app.use(Express.static(`${__dirname}/public`))
@@ -18,6 +18,6 @@ app.get('/users', usersPage)
 
 // listen
 const port = 3000
-app.listen(port, () => {
+export const server = app.listen(port, () => {
   console.log('server start')
 })
