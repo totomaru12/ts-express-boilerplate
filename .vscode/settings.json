@@ -5,7 +5,23 @@
     "source.fixAll": true
   },
   "cSpell.words": [
+    "Distrib",
+    "borderless",
+    "ccircle",
+    "cpath",
+    "csvg",
+    "datetime",
+    "dropend",
+    "dropstart",
+    "dropup",
+    "entrypoint",
+    "focusable",
+    "focusring",
+    "offcanvas",
+    "readonly",
     "respawn",
-    "totomaru"
+    "scrollable",
+    "totomaru",
+    "unstyled"
   ]
 }
