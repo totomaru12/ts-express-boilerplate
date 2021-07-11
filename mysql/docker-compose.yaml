@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  mysqldb:
+    image: mysql:8.0
+    container_name: ts_express_mysql
+    ports:
+      - '13306:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: ts_express_db
+      TZ: Asia/Tokyo
+    volumes:
+      - ./conf.d:/etc/mysql/conf.d:ro
+      - ./log:/var/log/mysql:rw

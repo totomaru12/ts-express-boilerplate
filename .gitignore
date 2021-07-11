@@ -3,3 +3,6 @@ node_modules/
 
 # generate output
 dist
+
+# mysql log
+mysql/log
