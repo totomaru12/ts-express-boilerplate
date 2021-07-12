@@ -1,0 +1,30 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "cSpell.words": [
+    "Distrib",
+    "autoincrement",
+    "borderless",
+    "ccircle",
+    "cpath",
+    "csvg",
+    "datasource",
+    "datetime",
+    "dropend",
+    "dropstart",
+    "dropup",
+    "entrypoint",
+    "focusable",
+    "focusring",
+    "offcanvas",
+    "readonly",
+    "respawn",
+    "scrollable",
+    "totomaru",
+    "unstyled",
+    "upsert"
+  ]
+}
