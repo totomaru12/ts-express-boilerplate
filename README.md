@@ -115,3 +115,11 @@ yarn prisma studio
 
 - Press F5 Key
 - or VSCode Mene Run --> Start Debugging
+
+## TODO
+
+- bootstrap (CSS)
+- simple user register / login / withdraw
+- data: create / update / delete
+- data: CSV export
+- data: search
