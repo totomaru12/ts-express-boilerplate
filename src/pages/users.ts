@@ -1,5 +1,5 @@
 import Express from 'express'
-import User from '../models/user_model'
+import { db } from '../db'
 
 export const usersPage = [
   async (
@@ -8,7 +8,7 @@ export const usersPage = [
     next: Express.NextFunction
   ): Promise<void> => {
     try {
-      const users = await User.find({}).exec()
+      const users = await db.user.findMany()
       response.locals.users = users
       next()
     } catch (error) {

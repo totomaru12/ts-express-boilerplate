@@ -6,3 +6,6 @@ dist
 
 # mysql log
 mysql/log
+
+# this ignore should be removed after 1st release
+prisma/migrations

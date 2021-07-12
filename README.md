@@ -1,6 +1,6 @@
 # ts-express-boilerplate
 
-boilerplate for express + ejs + typescript + mysql
+boilerplate for express + ejs + typescript + mysql + prisma
 
 ## prerequisites
 
@@ -24,16 +24,14 @@ mysql  Ver 14.14 Distrib 5.7.32, for osx10.16 (x86_64) using  EditLine wrapper
 ## editor requirements
 
 - vscode
+
 - vscode extension: [ESLint](https://github.com/Microsoft/vscode-eslint)
+
 - vscode extension: [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
+- vscode extension: [Prisma](https://github.com/prisma/language-tools)
+
 ## setup
-
-### server setup
-
-```terminal
-yarn
-```
 
 ### MySQL setup
 
@@ -69,6 +67,19 @@ docker-compose start
 
 // if you want to remove MySQL environment, input the below command
 docker-compose down
+```
+
+### server setup
+
+```terminal
+// install dependent packages
+yarn
+
+// setup prisma ORM
+yarn prisma generate
+
+// reflect schema info to db
+yarn prisma migrate dev --name init
 ```
 
 ## run script
