@@ -24,6 +24,7 @@
     "respawn",
     "scrollable",
     "totomaru",
-    "unstyled"
+    "unstyled",
+    "upsert"
   ]
 }

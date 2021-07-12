@@ -80,6 +80,9 @@ yarn prisma generate
 
 // reflect schema info to db
 yarn prisma migrate dev --name init
+
+// seed the database (set initial data to the database)
+yarn prisma db seed --preview-feature
 ```
 
 ## run script
@@ -100,6 +103,12 @@ yarn test --watch
 ```terminal
 yarn lint
 yarn fix
+```
+
+## see DB content
+
+```terminal
+yarn prisma studio
 ```
 
 ## debug
